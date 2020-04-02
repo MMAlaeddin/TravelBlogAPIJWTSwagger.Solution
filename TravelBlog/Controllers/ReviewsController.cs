@@ -19,7 +19,7 @@ namespace TravelBlog.Controllers
       _db = db;
     } 
 
-    [HttpGet]
+    // [HttpGet]
     public ActionResult<ICollection<Review>> Get(int destinationId, string title, int rating)
     {
       var query = _db.Reviews.AsQueryable();
