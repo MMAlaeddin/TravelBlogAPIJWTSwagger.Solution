@@ -43,6 +43,8 @@ namespace TravelBlog.Controllers
       return _db.Destinations.FirstOrDefault(entry => entry.DestinationId == id);
     }
 
+    
+
     [HttpPut("{id}")]
     public void Put(int id, [FromBody] Destination destination)
     {
