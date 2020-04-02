@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using TravelBlog.Models;
 using TravelBlog.Helpers;
 using TravelBlog.Services;
@@ -83,8 +82,8 @@ namespace TravelBlog
       app.UseAuthentication();
       app.UseOpenApi();
       app.UseSwaggerUi3();
-
       app.UseMvc();
+
     }
   }
 }
